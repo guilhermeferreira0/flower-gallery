@@ -30,7 +30,10 @@ if (!hasUsers) {
   db.exec(`
     INSERT INTO images (title, url)
     VALUES
-    ('Flower 01', 'https://res.cloudinary.com/di2rpmtzc/image/upload/v1714306271/samples/dessert-on-a-plate.jpg')
+    ('Image Example01', 'https://res.cloudinary.com/di2rpmtzc/image/upload/v1714306271/samples/dessert-on-a-plate.jpg'),
+    ('Image Example02', 'https://res.cloudinary.com/di2rpmtzc/image/upload/v1714306270/samples/coffee.jpg'),
+    ('Image Example03', 'https://res.cloudinary.com/di2rpmtzc/image/upload/v1714306250/samples/ecommerce/car-interior-design.jpg'),
+    ('Image Example04', 'https://res.cloudinary.com/di2rpmtzc/image/upload/v1714306244/samples/food/pot-mussels.jpg')
   `);
 }
 

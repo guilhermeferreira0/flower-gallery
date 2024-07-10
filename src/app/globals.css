@@ -244,3 +244,67 @@ body {
 .form button:hover {
   border:2px solid black;
 }
+
+/* LOGIN */
+
+.login {
+  margin: 5rem auto;
+  padding: 1rem;
+  width: 70%;
+  height: auto;
+  border-radius: .3rem;
+  background-color: #7E778C;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login h2 {
+  padding-bottom: 2rem;
+}
+
+.login .register {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.login .register input {
+  margin: auto;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 2px solid transparent;
+  width: 80%;
+  height: 30px;
+  background-color: #3E3940;
+  color: white;
+  transition: border .4s ease-in-out;
+}
+
+.login .register input:focus {
+  outline: none;
+  border: 2px solid black;
+}
+
+.login .register label {
+  margin: auto;
+  width: 80%;
+}
+
+.login .register button {
+  margin: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 2px solid transparent;
+  width: 40%;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+
+.login .register button:hover {
+  border: 2px solid black;
+  transform: translate(-4px, -4px);
+}
