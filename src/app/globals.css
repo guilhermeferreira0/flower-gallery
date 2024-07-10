@@ -200,18 +200,18 @@ body {
   display: none;
 }
 
-.form label {
+.form .button {
   height: fit-content;
   padding: .8rem 6rem;
   border-radius: 12px;
   background-color: #6a59ff;
 }
 
-.form label:hover {
+.form .button:hover {
   cursor: pointer;
 }
 
-.form .upload {
+.form .upload-content{
   display: flex;
   gap: 1rem;
 }

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,7 +8,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-import Image from 'next/image';
 
 export default function SlideshowPage({ images }) {
   if (!images) throw new Error('Images Not Found');
@@ -38,8 +38,8 @@ export default function SlideshowPage({ images }) {
       >
         {images.map(img => {
           return (
-            <SwiperSlide key={img.width}>
-              <Image src={img} alt='Slide Image'/>
+            <SwiperSlide key={img.title}>
+            <img src={img.url} alt={img.title} />
             </SwiperSlide>
           );
         })}
