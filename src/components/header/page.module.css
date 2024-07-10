@@ -18,6 +18,7 @@
   text-decoration: none;
   color: black;
   font-weight: 500;
+  font-size: 1.4rem;
   border-bottom: 1px solid transparent;
   padding-bottom: 0.4rem;
   transition: all .3s ease-in;
@@ -25,5 +26,5 @@
 
 .header nav a:hover {
   border-bottom: 1px solid black;
-  font-size: 1.15rem;
+  font-size: 1.6rem;
 }
