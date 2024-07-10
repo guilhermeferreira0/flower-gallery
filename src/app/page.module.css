@@ -1,0 +1,8 @@
+.main {
+  margin: 3rem auto;
+  width: 80%;
+  height: fit-content;
+  padding: 1rem;
+  border-radius: 24px;
+  background-color: lightgray;
+}

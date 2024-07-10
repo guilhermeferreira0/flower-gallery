@@ -11,7 +11,7 @@ export default function MainHeader() {
             <Link href='/'>Home</Link>
           </li>
           <li>
-            <Link href='/galley'>Gallery</Link>
+            <Link href='/gallery'>Gallery</Link>
           </li>
           <li>
             <Link href='/login'>Login</Link>
