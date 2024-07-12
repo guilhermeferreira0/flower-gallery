@@ -1,4 +1,7 @@
-export function auth(mode, prevState, formData) {
+import { createUser } from "@/lib/db";
+import { redirect } from "next/navigation";
+
+export async function auth(mode, prevState, formData) {
   if (!mode || mode !== 'login' || mode !== 'login') {
     throw new Error('Error page not found!');
   }
@@ -10,7 +13,7 @@ export function auth(mode, prevState, formData) {
     const firstName = formData.get('firstName');
     const lastName = formData.get('lastName');
 
-    
+    await createUser(firstName, lastName, email, password);
+    redirect('/gallery');
   }
-
 }
