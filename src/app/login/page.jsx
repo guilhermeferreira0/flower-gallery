@@ -2,6 +2,7 @@
 
 import {useFormState} from 'react-dom';
 import Link from "next/link";
+import { auth } from '@/actions/auth';
 
 export default function LoginPage({ searchParams }) {
   const mode = searchParams.mode || 'login';
@@ -11,23 +12,14 @@ export default function LoginPage({ searchParams }) {
     <div className="login">
       <h2>Register</h2>
       <form action={formAction} className="register">
-        {mode === 'login' && (
-          <>
-            <label htmlFor="">E-mail</label>
-            <input type="text" name="email" id="email" />
+        <label htmlFor="">E-mail</label>
+        <input type="text" name="email" id="email" />
 
-            <label htmlFor="">Password</label>
-            <input type="text" name="password" id="password" />
-          </>
-        )}
+        <label htmlFor="">Password</label>
+        <input type="text" name="password" id="password" />
+
         {mode === 'signup' && (
             <>
-              <label htmlFor="">E-mail</label>
-              <input type="text" name="email" id="email" />
-
-              <label htmlFor="">Password</label>
-              <input type="text" name="password" id="password" />
-
               <label htmlFor="">First Name</label>
               <input type="text" name="firstName" id="name" />
 
