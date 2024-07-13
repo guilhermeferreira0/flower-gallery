@@ -1,8 +1,9 @@
+'use server';
 import { createUser } from "@/lib/db";
 import { redirect } from "next/navigation";
 
 export async function auth(mode, prevState, formData) {
-  if (!mode || mode !== 'login' || mode !== 'login') {
+  if (!mode || mode !== 'login' && mode !== 'login') {
     throw new Error('Error page not found!');
   }
 
